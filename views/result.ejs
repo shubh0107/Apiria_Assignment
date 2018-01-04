@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Results</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.css"/>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.13/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.js"></script>
+    </head>
+    <body>
+    <table class="ui selectable inverted table">
+        <thead>
+        <tr>
+            <th>EMPLOYEE_ID</th>
+            <th>FIRST_NAME</th>
+            <th>LAST_NAME</th>
+            <th>JOB_ID</th>
+        </tr>
+        </thead>
+        <tbody>
+        <% for(i=0; i<result.length; i++) {  %>
+        <tr>
+            <%= result[i].employeeID %>
+            <%= result[i].firstName %>
+            <%= result[i].lastName %>
+            <%= result[i].job_id %>
+        </tr>
+        <% } %>
+        </tbody>
+    </table>
+    </body>
+</html>
